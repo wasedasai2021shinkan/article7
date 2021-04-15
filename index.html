@@ -1,0 +1,693 @@
+<!doctype HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ちょっと局、超えてみない？〜超局PJについて〜</title>
+        <meta name="description" content="超局PJについてご紹介します！">
+        <link rel="icon" type="png" href="logo.png">
+    </head>
+
+    <body>
+      <header>
+  
+        <div class="logo1">
+            <a href=" https://wasedasai2021shinkan.github.io/toppage/" id="headerlogo"><img src="headericon.png" class="hedlogo">
+            </a>
+        </div>
+  
+        <div id="hamburger">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+  
+        <nav class="sm navi">
+          <ul class="lists">
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/daihyouaisatsu/">代表挨拶</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/about/">早稲田祭について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/event/">新歓イベント</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/katsudounitsuite/">活動について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/rensai/">連載記事</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/schedule/
+          ">年間スケジュール</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/photogallery/">フォトギャラリー</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/nyukai/">入会方法</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/otoiawase/">お問い合わせ</a></li>
+         </ul>
+        </nav>
+  
+
+  
+        <nav class="pc navi">  
+          <ul class="lists">
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/daihyouaisatsu/">代表挨拶</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/about/">早稲田祭について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/katsudounitsuite/">活動について</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/photogallery/">フォトギャラリー</a></li>
+            <li class="lili"><a  class="listwords" href="https://wasedasai2021shinkan.github.io/otoiawase/">お問い合わせ</a></li>
+          </ul>
+        </nav>
+ 
+  
+      </header>
+  
+  
+
+      <script src="jquery-3.6.0.min.js"></script>
+        <script>
+          $('#hamburger').on('click', function(){
+          $('.icon').toggleClass('close');
+          $('.sm').slideToggle();
+          });
+    
+        </script>
+
+<style>
+/*header*/
+
+header {
+height: 60px;
+width: 100%;
+padding: 0px 0px;
+background-color:#78c1cd;
+position: fixed;
+top: 0;
+z-index: 10;
+display: flex;
+font-family:serif;
+}
+
+
+.lili:hover{
+filter: alpha(opacity=85);
+-moz-opacity: 0.85;
+opacity: 0.85;
+
+}
+
+.logo1 {
+font-size: 25px;}
+
+.hedlogo{
+height:55px;
+width:55px;
+margin-left:12px;
+}
+
+
+.hedlogo:hover  {
+filter: alpha(opacity=85);
+-moz-opacity: 0.85;
+opacity: 0.85;
+
+}
+.navi{
+margin: 0 0 0 auto;
+}
+
+.lists {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+margin-right:15px
+}
+
+.listwords {
+color: #eaf4fc;
+text-decoration: none;
+display: block;
+line-height: 60px;
+padding: 0 20px;
+}
+
+.sm {
+display: none;
+}
+.toppagelogo{
+height:500px;
+width:500px:
+padding:400px;
+margin:0 auto;
+}
+/*---------------------------------------------------------------*/
+@media (max-width: 900px) {
+
+.pc {
+  display: none;
+}
+
+#hamburger {
+  background-color: transparent;
+  position:relative;
+  float:right
+  cursor:pointer;
+  margin: 0 0 0 auto;
+  height: 60px;
+  width: 60px;
+}
+
+.icon span {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 4px;
+  background-color:#eaf4fc;
+  border-radius: 8px;
+  transition: ease 0.75s;
+}
+
+.icon span:nth-of-type(1) {
+  top: 16px;
+}
+.icon span:nth-of-type(2) {
+  top: 28px;
+}
+.icon span:nth-of-type(3) {
+  bottom: 16px;
+}
+
+.close span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 28px;
+}
+
+.close span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.close span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+}
+
+.sm {
+    top: 60px;
+    left: 0px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: #78c1cd;
+    
+
+}
+
+.lists {
+  flex-direction: column;
+}
+
+.listwords {
+  text-align: center; 
+  border-top: solid 0.5px #eaf4fc;
+}
+
+
+.list {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+</style>
+
+        
+        
+        
+<body>
+<!-- コンテンツ -->
+<div class="content">
+  <div class="title">
+      <img src="title.png" alt="title">
+  </div>
+  <div class="text">
+    <div class="article-title">
+      <h1>ちょっと局、超えてみない？〜超局PJについて〜</h1>
+    </div>
+   
+    <h2>目次</h2>
+    <p class="table">1.超局PJとは？</br>
+                2.撮影・管理PJ</br>
+                3.オープンキャンパスPJ</br>
+                4.歴史認識PJ</br>
+                5.選挙管理委員会</br>
+       　　　　　 6.新歓PJ</p>
+ 
+<h2 class="title1">1. 超局PJとは？</h2>
+<p class="mazuha">
+                局を超えたPJ（プロジェクト）のこと。この記事では、PJ参加者へのインタビューを通していくつかのPJについて紹介していきます！
+</p>
+              
+  <h2 class="title2">2. 撮影・管理PJ</h2>
+
+<p class="satukan">
+早稲田祭当日の写真など、多くの写真を撮るPJ。通称、「さつかん」。<br>
+開発局2年の濱本美波さんにお話を伺いました。
+</p>
+<img class="hama1" src=" hama1.png" alt="hamamoto">
+              <style>.hama1 {
+  width: 100%;
+  margin: auto;
+}
+</style>
+
+<p class="questions">
+<b>・単刀直入に聞くけど、さつかんに入ったら楽しい？</b></p>
+<img src="hama.png" alt="" width="20%" height="20%">
+    <p>楽しいです！ 写真が好きな人が集まるから、趣味の延長みたいな感覚。人に出会いたいっていう人に最適です。
+</p>
+ 
+<p class="questions">
+<b>・さつかんに入ろうと思ったきっかけを教えて</b></p>
+<img src="hama.png" alt="" width="20%" height="20%">
+    <p>もともと写真が好きでした。昨年のさつかんの募集にも書いてあったけど、いろんな人と出会えるのが魅力的。<br>
+運スタは所属人数がすごく多いサークルだから、自分からもっとたくさんの人と仲良くなってみたいと思った。
+                </p>
+    
+<p class="questions">
+<b>・さつかんに入るためには、なにか必要なものはある？</b></p>
+<img src="hama.png" alt="" width="20%" height="20%">
+              <p>やる気。写真が好きなこと。<br>
+                <b>カメラを持っていてほしいのはあるけど、特に必要なスキルはない</b>かな。
+                </p>
+              
+<p class="questions">
+<b>・運スタに入りたいと思ってる新入生に向けてひとことお願い！</b></p>
+<img src="hama.png" alt="" width="20%" height="20%">
+              <p>運スタでコミュニティを広げたければさつかんに入るべし！。
+                </p>
+              
+              
+              <h2 class="title3">3. オープンキャンパスPJ</h2>  <br>          
+   
+   <img class="opcp1" src="opcp.jpg" alt="opcp">
+              <style>.opcp1 {
+  width: 100%;
+  margin: auto;
+                }           </style>
+      <p>※2019年度撮影<//p>
+  <p class="ocpj">
+代表（3年）小野寺佑月さんにお話を伺いました。
+</p>
+<img class="yuzuki1" src=" yuzuki1.png" alt="onodera">
+              <style>.yuzuki1 {
+  width: 100%;
+  margin: auto;
+}
+
+</style>
+
+<p class="questions">
+<b>・OCPJってなんですか？</b></p>
+<img src="yuzuki.png" alt="" width="20%" height="20%">
+    <p>大学のオープンキャンパスの時期に合わせて、運スタが独自の企画を立案・運営するPJ。
+</p>
+ 
+<p class="questions">
+<b>・OCPJの魅力を教えてください。</b></p>
+<img src="yuzuki.png" alt="" width="20%" height="20%">
+    <p>運スタに入って初めての超局PJで、いろんな人と知り合えること。
+                </p>
+    
+<p class="questions">
+<b>・新規に向けてひとことお願いします。</b></p>
+<img src="yuzuki.png" alt="" width="20%" height="20%">
+              <p><b>同期となんかやったっていう達成感が得られる。</b><br>
+知り合いが増えて運スタ自体へのモチベーションがあがる。
+                </p>
+              
+<h2 class="title4">4.歴史認識PJ</h2>  <br>          
+   
+   <img class="shugo1" src="rekininnshugo.jpg" alt="shugo">
+              <style>.shugo1 {
+  width: 100%;
+  margin: auto;
+                }           </style>
+
+
+<img class="zassi1" src=" rekininzassi.png" alt="zassi">
+              <style>.zassi1 {
+  width: 100%;
+  margin: auto;
+}
+</style>
+              
+   <p class="rekinin">
+                20では劇班、雑誌班に分かれて活動した歴史認識PJ、通称「歴認（れきにん）」。<br>
+劇班から参加対応局2年の緒方希さん（写真左）、雑誌班から参加対応局2年の椎本結衣さん（写真右）にお話を伺いました。
+
+</p>
+  <img class="rekininn" src=" nozomuyui.png" alt="rekininn">
+              <style>.rekininn {
+  width: 100%;
+  margin: auto;
+}
+</style>
+
+<p class="questions">
+<b>・歴史認識PJって何？</b></p>
+<img src="yui.png" alt="" width="20%" height="20%">
+              <p>新規に運スタの歴史について認識してもらうPJ。<br>早稲田祭は過去に中止されたことがあって、そこからいかに復活したのかという経緯を劇と雑誌を通じて伝えます。
+</p>
+ 
+<p class="questions">
+<b>・歴認ってどういう雰囲気？</b></p>
+<img src="nozomu.png" alt="" width="20%" height="20%">
+              <p>20では唯一の対面で活動するPJだったこともあって、仲はすごくいい！<br>
+劇班は人数の割にタスクは少なく、和気あいあいとしてみんなと仲良くなることができた。
+                </p>
+  <img src="yui.png" alt="" width="20%" height="20%">
+              <p>既存から自立して新規が主役で活躍するPJだから、劇はちゃんと練習に来なきゃいけないし、雑誌はがっつりと記事を書かなきゃいけない。<br>タスクに対するモチベーションは必要だと思う。
+                </p>
+    
+<p class="questions">
+<b>・他のPJと比較して歴認の特色は？</b></p>
+<img src="yui.png" alt="" width="20%" height="20%">
+              <p>過去の過ちから学んだことを「きちんと伝える」ことは大切なこと。<br>
+                雑誌のためにインタビューをする中で、地域の方々が早稲田祭にどれだけ期待を寄せているのか肌で感じた。<br>
+                <b>祭への愛が深まるPJ</b>だと思う。
+                </p>
+              
+<p class="questions">
+<b>・運スタに入りたい新入生に一言お願い！</b></p>
+<img src="nozomu.png" alt="" width="20%" height="20%">
+              <p>色んなことができるサークルだし、できることが多いから達成感を得られる。
+                </p>
+  <img src="yui.png" alt="" width="20%" height="20%">
+              <p>歴認PJも、名前ほどお堅いPJではないから楽しめるよ！ みんなおいで！。
+                </p>
+              
+  <h2 class="title5">5.選挙管理委員会</h2>  <br>          
+   
+   <img class="senkan1" src="senkan.jpg" alt="senkan">
+              <style>.senkan1 {
+  width: 100%;
+  margin: auto;
+                }           </style>
+              
+   <p class="senkan">
+                運スタの顔である代表陣、局長を選ぶ選挙を運営する選挙管理委員会、通称「選管」。<br>
+参加対応局2年、町田美樹さん（写真右）、参加対応局2年、濱本美波さん（写真左）に伺いました。
+</p>
+<img class="senkann" src=" hamamiki.png" alt="senkann">
+              <style>.senkann {
+  width: 100%;
+  margin: auto;
+}
+</style>
+<p class="questions">
+<b>・選管に入ろうと思ったきっかけは？</b></p>
+<img src="hama.png" alt="" width="20%" height="20%">
+              <p>人と関わりを持ちたかったっていうのが一番だと思う。他局のことを知りたいっていうのも大きいかも！
+              </p>
+  <img src="miki.png" alt="" width="20%" height="20%">
+              <p>他局のことを知りたい、選挙を運営したいっていう思いもなくはないけど、やっぱり先輩が面白そうだし、友達増えそうっていう理由が大きいかな。
+</p>
+ 
+<p class="questions">
+<b>・選管ってどんな雰囲気？</b></p>
+<img src="miki.png" alt="" width="20%" height="20%">
+              <p>すごい仲良しだよ。
+                </p>
+  <img src="hama.png" alt="" width="20%" height="20%">
+              <p>これってどうやるの？」ていうところから会話になって仲良くなっていったな。
+                </p>
+  <img src="miki.png" alt="" width="20%" height="20%">
+              <p>タスクの時と遊びの時のみんなの雰囲気が結構違うよね。
+                </p>
+  <img src="hama.png" alt="" width="20%" height="20%">
+              <p><b>選管はメリハリのあるPJ</b>だったね。
+                </p>
+    
+<p class="questions">
+<b>・選管に入ってよかったことは？</b></p>
+
+  <img src="hama.png" alt="" width="20%" height="20%">
+              <p>選挙を通して他局のことを知れるのはいいところかなって思う。<br>
+                この局は今こういう状況なんだっていうのを幅広く知れたのが面白かった！ <br>
+                自分と関わりのない局の人とも仲良くなれるのもいいところ。
+                </p>
+  <img src="miki.png" alt="" width="20%" height="20%">
+              <p>選挙って単純な作業かなって思ってたけど、選管をやってみたらいろんな人が動いていて、<br>
+                見えないところで仕事に対してストイックに取り組める人たちと出会えたのが大きいと思う！
+                </p>
+  <img src="hama.png" alt="" width="20%" height="20%">
+              <p>とにかく楽しかった！
+                </p>
+              
+<p class="questions">
+<b>・運スタに入りたい新入生に一言お願い！</b></p>
+<img src="hama.png" alt="" width="20%" height="20%">
+              <p>PJは積極的に参加したら友達できるし楽しいよ！ 運スタに入ったら超局PJも入ろう！
+                </p>
+  <img src="miki.png" alt="" width="20%" height="20%">
+              <p>運スタ入れば友達増えるよ！
+                </p>            
+              
+              
+   <h2 class="title6">6.新歓PJ</h2>  <br>          
+   
+   <img class="sinkan1" src="sannin.png" alt="sinkan">
+              <style>.sinkan1 {
+  width: 100%;
+  margin: auto;
+                }           </style>
+              
+   <p class="sinkan">
+                お互いの近況報告も兼ねて、この記事を作成した3人で深夜Zoomを開きました。<br>
+
+                広報制作局2年、藤本奈津子　（写真左）<br>
+参加対応局2年、石橋聖輝　（写真中央）<br>
+参加対応局2年、中川彰也　（写真右）<br>
+
+</p>
+
+
+  <img src="masaki.png" alt="" width="20%" height="20%">
+              <p>新歓PJってどんなPJなの？ 自分たちがやってるPJについて聞くのも変だけど。(笑)
+</p>
+  <img src="natuko.png" alt="" width="20%" height="20%">
+              <p>新歓PJはその名の通り新歓のためのPJ。 今年は全部で5つのチームに分かれて活動していて、<br>
+                ・新歓SNSの運営をする広報チーム<br>
+・1年生に向けた最初の窓口である説明会を主宰する説明会チーム<br>
+・ラジオを通じて運スタのリアルな情報をお届けするラジオ企画を受け持つラジオチーム<br>
+・オンライン上での新入生との交流イベントを企画・運営する交流企画チーム<br>
+・新入生向けの記事を作成するネット記事チーム<br>
+の5チーム。もちろん、この記事を作っているのはネット記事チームだね。
+
+</p>
+ 
+<img src="shoya.png" alt="" width="20%" height="20%">
+              <p class="questions"><b>新歓PJ楽しい？</b>
+                </p>
+  <img src="masaki.png" alt="" width="20%" height="20%">
+              <p>楽しいよ！ 最初、中川が免許合宿で2週間いなくなるって聞いた時には「ヤバ、1人だとキャパるかも」って思ってた。<br>
+                だけど新歓PJのタスクってそんなに重くないから気軽に楽しくやれてるよ。藤本も手伝ってくれたし。
+                </p>
+  <img src="shoya.png" alt="" width="20%" height="20%">
+              <p>3人で一緒に作れて心強かった！
+                </p>
+  <img src="natuko.png" alt="" width="20%" height="20%">
+              <p>「キャパる」ってどういう意味だっけ？と思った新入生のみんなは、<br>
+                過去記事「あなたは全部わかる？ 最低限押さえたい運スタ用語12選」を読んでみてね！
+              </p><br>
+
+              <p class="questions"><b>2人はなんで新歓PJに関わろうと思ったの？</b>
+                </p>
+  <img src="masaki.png" alt="" width="20%" height="20%">
+              <p>友達を増やしたかったからかな。自分のチームには人が少ないから。
+                </p>
+  <img src="shoya.png" alt="" width="20%" height="20%">
+              <p>他チームの石橋と他局の藤本とも仲良くなれたし、インタビューを通して話したことがなかった同期とも話せたし、楽しいよ。<br>
+                免許合宿で留守にしててもみんな優しいし(笑)
+                </p>
+  <img src="natuko.png" alt="" width="20%" height="20%">
+              <p class="questions"><b>最後に、運スタに入りたい新入生に一言！</b>
+                </p>            
+<img src="shoya.png" alt="" width="20%" height="20%">
+              <p>一生に一度の大きな思い出を作ろう！ 友達もたくさんできるよ。
+                </p>
+  <img src="masaki.png" alt="" width="20%" height="20%">
+              <p>せっかく早稲田に来たなら早稲田にしかないものを！ みんな入ってね！
+                </p>                
+              
+   <p class="matome">
+                超局PJについて、少しでも知っていただけましたか。<br>
+              運スタをもっと知りたいという人は<a href="https://wasedasai2021shinkan.github.io/event/">ここ</a>をクリック！ <br>
+              交流企画もぜひ利用してみてください～ </p>
+   
+              
+              
+</div>
+</body>
+          
+          <style>
+            body {
+    background-color: #eaf4fc
+}
+.titlephoto {
+    width: 100%;
+    padding-top: 50px;
+}
+ 
+
+
+.content {
+  color: #17183B;
+  font-family: serif;
+}
+
+.title img {
+  width: 100%;
+}
+
+
+
+.title {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+.text {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #17183B;
+  margin-bottom: 30px;
+}
+.article-title {
+  text-align: center;
+  font-family: serif;
+}
+.text h1 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+
+h2 {
+    color: #17183B;
+    font-size:22px;
+    font-family: serif;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.table {
+    color: #17183B;
+    font-size:18px;
+    font-family: serif;
+}
+
+
+.title1 {
+    color: #17183B;
+    font-size:20px;
+    font-family: serif;
+    margin-top: 40px;
+}
+
+.mazuha {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+
+.satukan {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.questions {
+  font-size:18px;
+  font-family: serif;
+  margin-top: 30px;
+}
+
+.matome {
+  font-size:18px;
+  font-family: serif;
+  margin-top: 130px;
+}
+            </style>
+            
+            
+            
+            
+            
+            
+    <footer>
+
+<div class="wrapper2">
+    <p class="title">WASEDASAI OPERATION STAFF</br>SHINKAN 2021</p>
+    <div class="innerbox">
+          
+        <a href="https://twitter.com/wasedasai_new?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" > 
+            <img src="twitter.png" alt="twitter" width="80" height="80"　border="0"> 
+        </a>
+
+        <a href="https://www.instagram.com/wasedasai_new/" target="_blank" > 
+            <img src="instagram.png" alt="instagram" width="80" height="80"　border="0"> 
+        </a>
+
+        <a href="https://qr-official.line.me/sid/M/011uqnra.png" target="_blank" > 
+            <img src="line.png" alt="line" width="80" height="80"　border="0"> 
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCFh9blapIkxPf4Al3L87QHQ" target="_blank" > 
+            <img src="youtube.png" alt="youtube" width="80" height="80"　border="0"> 
+        </a>
+    </div>
+</div>
+     <div class="footerlogo">
+            <a href="https://wasedasai2021shinkan.github.io/toppage/" target="_blank" > 
+                <img src="footerlogo.png" alt="footerlogo" width="40%" height="40%"　border="0"> 
+            </a>
+        </div>
+
+
+
+    <p><small>Copyright @ WASEDASAI2021 Staff All Rights Reserved. </small></p>
+</div>
+</footer>
+
+<style>
+   footer {
+    background-color: #78c1cd;
+    text-align: center;
+    padding: 26px 0;
+    text-decoration: none;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: serif;
+}
+.wrapper2 {
+    background-color: #78c1cd;
+}
+
+
+.innerbox {
+    margin-top: 5px;
+    background-color: #78c1cd;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;/*水平方向に均等に分布(端は詰める)*/
+}
+
+.footerlogo{
+    margin-top: 5px;
+}
+
+  </style>
+					</html>
